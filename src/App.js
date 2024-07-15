@@ -27,15 +27,15 @@ function App() {
       <div className="cards flex justify-center items-center">
        {nasaphotos.map((e)=>{
         return(
-          <div key={e.title} className="p-5 flex gap-3">
-             <div className="image ">
-         <img src={e.url} alt={e.title} className=" rounded-xl" />
+          <div key={e.title} className="p-5 ">
+          <div className="image ">
+         <img src={e.url} alt={e.title} className="w-[20%] rounded-xl" />
             </div>
-            <div className="details">
+            <div className="details flex flex-col">
             <h1 className="text-2xl">{e.title}</h1>
             <p className="text-slate-500">{e.explanation}</p>
             <p>{e.date}</p>
-            <p></p>
+            
             </div>
          </div>
         )
